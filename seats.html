@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Seats - 247237</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -13,7 +14,32 @@
   </header>
 
   <main>
-    <p>This is the Hostel store seats page.</p>
+    <p id="status">Welcome! Select an empty seat to assign a name.</p>
+
+    <p class="summary">
+      Free seats: <strong id="free">8</strong>
+    </p>
+
+    <section class="form-area">
+      <label for="who">Name</label>
+      <input type="text" id="who" placeholder="Enter a name">
+
+      <label for="many">Count</label>
+      <input type="text" id="many" placeholder="Enter seat count">
+    </section>
+
+    <h2>Hall</h2>
+
+    <section id="hall" class="hall">
+      <button type="button" class="seat" id="seat-1" data-n="1"><span>1</span></button>
+      <button type="button" class="seat" id="seat-2" data-n="2"><span>2</span></button>
+      <button type="button" class="seat" id="seat-3" data-n="3"><span>3</span></button>
+      <button type="button" class="seat" id="seat-4" data-n="4"><span>4</span></button>
+      <button type="button" class="seat" id="seat-5" data-n="5"><span>5</span></button>
+      <button type="button" class="seat" id="seat-6" data-n="6"><span>6</span></button>
+      <button type="button" class="seat" id="seat-7" data-n="7"><span>7</span></button>
+      <button type="button" class="seat" id="seat-8" data-n="8"><span>8</span></button>
+    </section>
   </main>
 
   <footer>
